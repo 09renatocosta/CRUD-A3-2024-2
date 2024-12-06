@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To-Do List</title>
+  <link href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="todo-container">
+    <div class="todo-header">
+      <h1>To-Do List</h1>
+    </div>
+    <form class="todo-form" id="todo-form">
+      <input type="text" id="todo-input" placeholder="Adicione uma nova tarefa" />
+      <input type="text" id="todo-datetime" class="datetime-input" placeholder="Selecione data e horário" />
+      <button type="submit">Adicionar</button>
+    </form>
+    <ul class="todo-list" id="todo-list"></ul>
+    <div class="completed-container">
+      <h2>Tarefas Concluídas</h2>
+      <ul class="todo-list" id="completed-list"></ul>
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+  <script src="script.js"></script>
+</body>
+</html>
